@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos - Drop Call</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .section-fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <!-- Logo SVG -->
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 12V19" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 16L12 19L15 16" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="4" y="11" width="2" height="4" rx="1" fill="#2563EB"/>
+                    <rect x="18" y="11" width="2" height="4" rx="1" fill="#2563EB"/>
+                </svg>
+                <span class="text-2xl font-bold text-gray-900">Drop Call</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-2">
+                <a href="#historia" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Nossa História</a>
+                <a href="#diferenciais" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Diferenciais</a>
+                <a href="#depoimentos" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Depoimentos</a>
+                <a href="#contato" class="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded-full text-sm font-medium transition duration-300">Fale Conosco</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Principal (Hero) -->
+        <section class="bg-white">
+            <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">Menos Cancelamentos, Mais Lucro para seu E-commerce.</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Nosso serviço de confirmação de pedidos via call center é a ponte que faltava entre o seu e-commerce e o sucesso nas entregas, especialmente em mercados de pagamento na entrega.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção Nossos Diferenciais -->
+        <section id="diferenciais" class="py-20 md:py-28 bg-gray-50 section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">A Solução Definitiva para Entregas</h2>
+                    <p class="text-gray-600">Entendemos o custo de um pedido que dá errado. Por isso, criamos um serviço que protege seu lucro e otimiza sua logística. Assim que um pedido é feito, nós entramos em ação.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="p-8 bg-white rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-blue-600 mb-3">Confirmação Proativa</h3>
+                        <p>Entramos em contato com cada cliente para confirmar os dados do pedido, verificar o endereço e garantir que ele realmente deseja receber o produto.</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-blue-600 mb-3">Redução de Custos</h3>
+                        <p>Evitamos o prejuízo com fretes de pedidos incorretos, cancelados ou fraudulentos. Essencial para operações com pagamento na entrega (COD).</p>
+                    </div>
+                    <div class="p-8 bg-white rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-blue-600 mb-3">Aumento da Confiança</h3>
+                        <p>Um contato humano e profissional aumenta a confiança do cliente na sua loja, melhora a experiência de compra e incentiva a fidelização.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Resultados em Números -->
+        <section class="py-20 md:py-28 bg-blue-600 text-white section-fade-in">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">Nosso Impacto no seu Negócio</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <p class="text-5xl font-extrabold">+30%</p>
+                        <p class="text-lg text-blue-200">no aumento da taxa de entregas bem-sucedidas.</p>
+                    </div>
+                    <div>
+                        <p class="text-5xl font-extrabold">-40%</p>
+                        <p class="text-lg text-blue-200">na redução de custos com logística reversa.</p>
+                    </div>
+                    <div>
+                        <p class="text-5xl font-extrabold">+25%</p>
+                        <p class="text-lg text-blue-200">em clientes que voltam a comprar após o contato.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Depoimentos -->
+        <section id="depoimentos" class="py-20 md:py-28 bg-white section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">O Que Nossos Clientes Dizem</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                        <p class="text-gray-600 mb-4">"Operar com dropshipping na Polônia significa que cada entrega falha é um custo direto para nós. A Drop Call se tornou nossa linha de frente, confirmando cada pedido e reduzindo nossas perdas com logística em quase 50%. Indispensável para o nosso modelo de negócio."</p>
+                        <p class="font-bold text-gray-900">Piotr Nowak</p>
+                        <p class="text-sm text-gray-500">Fundador da PL Dropship Express (Polônia)</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                        <p class="text-gray-600 mb-4">"No mercado eslovaco, a confiança é tudo. O contato proativo da Drop Call para confirmar os pedidos não só diminuiu os cancelamentos na entrega, mas também passou uma imagem de profissionalismo que fez nossos clientes se sentirem mais seguros para comprar conosco. Nossas vendas recorrentes aumentaram."</p>
+                        <p class="font-bold text-gray-900">Katarína Horváthová</p>
+                        <p class="text-sm text-gray-500">Diretora da SlovakTech (Eslováquia)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Nossa História -->
+        <section id="historia" class="py-20 md:py-28 bg-gray-50 section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nossa Trajetória</h2>
+                    <p class="text-gray-600">Fundada em 2021, a Drop Call nasceu para resolver um dos maiores desafios do e-commerce: a falha na entrega.</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&h=400&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Equipe Drop Call em colaboração, representando a jornada da empresa" class="rounded-lg shadow-xl w-full object-cover h-[400px]">
+                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-gray-600">
+                            Percebemos que a comunicação pós-venda era a chave para reduzir custos e aumentar a satisfação do cliente. Começamos com uma equipe enxuta e uma grande visão: revolucionar a confirmação de pedidos, tornando-a mais humana e eficiente para lojas online em todo o mundo. Hoje, somos orgulhosos parceiros de e-commerces que confiam em nosso trabalho para proteger suas operações.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de CTA -->
+        <section class="bg-white section-fade-in">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pronto para Otimizar suas Entregas?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">Fale com um de nossos especialistas e descubra como a Drop Call pode transformar seu pós-venda e aumentar seu lucro.</p>
+                <a href="#contato" class="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-full font-bold text-lg transition duration-300">Solicitar uma Demonstração</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="contato" class="bg-gray-800 text-white section-fade-in">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Drop Call</h3>
+                    <p class="text-gray-400">Menos cancelamentos, mais lucro.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Contato</h3>
+                    <ul class="text-gray-400">
+                        <li class="mb-2">Email: <a href="mailto:contato@dropcall.com" class="hover:text-blue-400">contato@dropcall.com</a></li>
+                        <li>Telefone: <a href="tel:+5500900000000" class="hover:text-blue-400">(00) 90000-0000</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-3">Siga-nos</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; 2024 Drop Call. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para animar seções ao rolar a página
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.section-fade-in').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
+
+
+
